@@ -1,5 +1,5 @@
 # Linear Regression of the amount of International Markets an artist is in compared to their populairty score. 
-# Linear Regression to be done in Tableau 
+# Linear Regression to be done in Tableau for ease and layout 
 
 import pandas as pd
 
