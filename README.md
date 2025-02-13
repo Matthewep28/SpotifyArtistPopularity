@@ -5,6 +5,8 @@ Analyzed Spotify and US Billboard 100 data using python to explore music trends,
 Index
 1. 'Perez Spoify Artist Popularity Capstone.pdf' - Final presentation of Capstone done in Tabaleu. *Annotated*
 2. 'Perez 16.2 Python Analysis' - Directory of all signigcant python files created for this project, inlcuidng APIs for data retrival, graphs, and data cleaning.
+
+   
         a. 'Amount_Of_Songs_To_Popularity_Score_Graph.py' - Linear Regression of an artists' number of songs on Billboard100 to Spotify Popularity Score
         b. 'Billboard100_Avg_Stay_BNW.py' - Box and Whisker plot to show average duration a song will stay on the Billboard100
         c. 'Genre_History_Graph.py' - Line Graph showing what percent a genre make of total Billboard 100 songs by year, since 1975 
