@@ -1,6 +1,6 @@
 
 
-#Linear graph of the change of genres present in Billboard 100 over time
+#Linear graph of the change of genres present in Billboard 100 over time (since 1975)
 #smoothed over with a 5 year rolling window
 
 
@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 file_path = "/Users/matthewperez/Desktop/Spotify_Capstone/charts_with_main_genre.csv"
 df = pd.read_csv(file_path)
 
-# Convert the 'date' column to datetime format
+# Convert  to datetime format
 df['date'] = pd.to_datetime(df['date'])
 
 # Extract the year from the 'date' column
