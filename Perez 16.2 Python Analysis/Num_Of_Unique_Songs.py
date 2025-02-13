@@ -1,4 +1,4 @@
-# of songs in billbord 100 a year
+# Finds the Amount of Unique Songs each Artist has on the Billboard 100
 
 import pandas as pd
 import matplotlib.pyplot as plt
