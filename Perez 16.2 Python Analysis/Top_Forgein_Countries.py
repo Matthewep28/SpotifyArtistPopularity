@@ -1,4 +1,5 @@
-# ID top non English speaking countries US audiences listen to
+# IDs the top non English speaking (US, UK, CA, AU, NZ) countries that US audiences listen to
+# Presents Results as bar graph
 import pandas as pd
 import matplotlib.pyplot as plt
 
