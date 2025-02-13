@@ -37,7 +37,7 @@ top_10_artists = artist_country_count_us.nlargest(10, 'country_count')
 print("Top 10 Artists by International Markets:")
 print(top_10_artists[['artist_id', 'artists', 'popularity', 'country_count']])
 
-# Save the top 10 artists to another CSV file (optional)
+# Save the top 10 artists to another CSV file 
 top_10_csv_output_path = '/Users/matthewperez/Desktop/Spotify_Capstone/USartists_Markets.csv'
 top_10_artists.to_csv(top_10_csv_output_path, index=False)
 
