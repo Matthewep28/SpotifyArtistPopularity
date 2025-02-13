@@ -1,4 +1,4 @@
-# makes pie chart of 2005 vs 2021 to show region distrubtion
+# pie chart of 2005 vs 2021 to show global region distrubtion
 
 import pandas as pd
 import matplotlib.pyplot as plt
