@@ -1,6 +1,6 @@
 
 
-# box and whiskers for Spotify dataset, how long a song tends to last on the Spotify Daily 50 in the US
+# box and whiskers for Spotify dataset, measures how long a song tends to last on the Spotify Daily 50 in the US
 
 import pandas as pd
 import matplotlib.pyplot as plt
