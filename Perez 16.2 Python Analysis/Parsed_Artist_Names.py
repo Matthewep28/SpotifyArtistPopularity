@@ -1,4 +1,3 @@
-# Perfect Parse 2
 # parsing artist names to take into account featured artists and collaborations 
 
 
@@ -22,7 +21,7 @@ def parse_artist_names(artist_string):
     # Strip each artist name of any leading/trailing whitespace
     return [artist.strip() for artist in artist_list if artist.strip()]
 
-# Example song data (use actual data instead)
+# Example song data 
 songs = [
     {"title": "Song 1", "artists": "Coldplay x BTS"},
     {"title": "Song 2", "artists": "Jason Aldean & Carrie Underwood"},
