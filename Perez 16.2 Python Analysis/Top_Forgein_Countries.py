@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 file_path = '/Users/matthewperez/Desktop/Spotify_Capstone/charts_with_main_genre.csv'  # Update with your file path
 data = pd.read_csv(file_path)
 
-# Convert the 'date' column to datetime format
+# Convert  to datetime format
 data['date'] = pd.to_datetime(data['date'], errors='coerce')
 
 
