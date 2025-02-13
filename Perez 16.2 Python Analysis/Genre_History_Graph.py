@@ -1,6 +1,7 @@
 
 
-#gets the change of genres over time, smoothed over with a 5 year rolling window
+#Linear graph of the change of genres present in Billboard 100 over time
+#smoothed over with a 5 year rolling window
 
 
 import pandas as pd
