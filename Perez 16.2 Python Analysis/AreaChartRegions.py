@@ -9,7 +9,7 @@ df = pd.read_csv(file_path)
 
 # Step 1: Filter the data
 def filter_data(df):
-    # Convert 'date' to datetime format
+    # Convert  to datetime format
     df['date'] = pd.to_datetime(df['date'])
 
     # Exclude 'Unknown' and 'Other' groups
