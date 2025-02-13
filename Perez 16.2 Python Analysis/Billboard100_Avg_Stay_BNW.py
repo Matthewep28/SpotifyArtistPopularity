@@ -1,4 +1,4 @@
-# Box and whiskers plot showing distribution of long a song is on the Billboard 100
+# Box and whiskers plot showing distribution of long a song averages on the Billboard 100
 
 import pandas as pd
 import matplotlib.pyplot as plt
