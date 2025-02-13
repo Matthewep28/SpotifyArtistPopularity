@@ -1,4 +1,4 @@
-# amount of weeks on billboard 100 vs popularity score
+# Linear Regression of the amount of weeks an artist has been on the billboard 100 to the artist's popularity score
 
 import pandas as pd
 from sklearn.linear_model import LinearRegression
