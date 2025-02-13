@@ -1,15 +1,16 @@
 # Linear Regression of the amount of weeks an artist has been on the billboard 100 to the artist's popularity score
+# Graph redone in Tableau in Final for Ease
 
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Load the xmas_3.csv file
+# Load  file
 file_path = "/Users/matthewperez/Desktop/Spotify_Capstone/xmas_3.csv"  # Replace with the path to xmas_3.csv
 xmas_3_df = pd.read_csv(file_path)
 
-# Ensure 'date' is in datetime format and filter for dates 2010 and after
+# Ensure  datetime format and filter for dates 2010 and after
 xmas_3_df["date"] = pd.to_datetime(xmas_3_df["date"])
 filtered_df = xmas_3_df[xmas_3_df["date"].dt.year >= 2010]
 
