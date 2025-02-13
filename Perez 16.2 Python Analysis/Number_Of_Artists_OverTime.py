@@ -1,4 +1,4 @@
-# number of songs with multiple artists over time
+# number of songs with multiple artists over time (since 1990)
 # Avg number of appearances for songs with one artist: 8.285891440865294
 # Avg number of appearances for songs with more than one artist: 9.331905541602497
 
