@@ -1,11 +1,12 @@
 #linear regression of amount of unique songs an artist has in the billboard 100 to their popularity score
+#linear Regression redone in Tableau in final For Ease
 
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Load the xmas_3.csv file
+# Load  file
 file_path = "/Users/matthewperez/Desktop/Spotify_Capstone/xmas_3.csv"  # Replace with the path to xmas_3.csv
 xmas_3_df = pd.read_csv(file_path)
 
@@ -51,17 +52,10 @@ plt.ylim(0, 100)
 plt.legend()
 plt.show()
 
-# Now, let's get the top 20 artists based on unique song counts
-# Sort by the count of unique songs in descending order and get the top 20 artists
+#  top 20 artists based on unique song counts
 top_artists = song_counts.sort_values(by="unique_songs_count", ascending=False).head(20)
 
-# Print the names of the top 20 artists (you'll need a way to map artist_id to artist names)
-# If you have a separate dataset for artist names, you can merge it with 'top_artists' here
-# Assuming you have a mapping, here's an example:
-# artist_name_df = pd.read_csv("path_to_artist_names.csv")  # Replace with your actual artist names data
-# merged_artists = pd.merge(top_artists, artist_name_df, on="artist_id", how="left")
 
-# Just print the top 20 artist IDs for now (you can add names if you have them in your dataset)
 print("Top 20 Artists with Most Unique Songs:")
 for index, row in top_artists.iterrows():
     print(f"Artist ID: {row['artist_id']}, Unique Songs: {row['unique_songs_count']}")
