@@ -1,6 +1,7 @@
-# my template to use the Spotify API. Have to change the def get_song_info and the URL endpoint inside of it
-# to get the information you want. Also rememeber to change the csv file you call upon if wanting to load in a different dataset.
-# also had to save requests in chunks inorder to circumvent the API request limit.
+# My template to use the Spotify API. Used API to populate datatsets with additional data (Genre, Popularity Score, Artist id, year etc)
+# Have to change the def get_song_info and the URL endpoint inside of it, to get different datasources 
+# Can Load different different datasets
+# also had to save requests in chunks  and throttle requests inorder to circumvent the API request limits.
 
 # Import necessary libraries
 from dotenv import load_dotenv
@@ -143,7 +144,7 @@ for i, chunk in enumerate(chunks[start_chunk:], start=start_chunk):
     process_chunk(chunk, i, token)
     print(f"Finished processing chunk {i + 1}/{len(chunks)}")
 
-# Optional: Combine all chunks into a single DataFrame
+#  Combine all chunks into a single DataFrame
 import glob
 
 all_chunks = glob.glob("/Users/matthewperez/Desktop/Spotify_Capstone/chunk_*_data.csv")
