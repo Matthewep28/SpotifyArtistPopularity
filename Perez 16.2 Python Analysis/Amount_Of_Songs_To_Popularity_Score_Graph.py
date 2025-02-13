@@ -11,7 +11,7 @@ file_path = "/Users/matthewperez/Desktop/Spotify_Capstone/xmas_3.csv"  # Replace
 xmas_3_df = pd.read_csv(file_path)
 
 
-# Ensure 'date' is in datetime format and filter for dates 2010 and after
+# Ensure datetime format and filter for dates 2010 and after
 xmas_3_df["date"] = pd.to_datetime(xmas_3_df["date"])
 filtered_df = xmas_3_df[xmas_3_df["date"].dt.year >= 2010]
 
