@@ -1,4 +1,4 @@
-# Box and whiskers plot showing distribution of long a song averages on the Billboard 100
+# Box and whiskers plot showing distribution of long a song averages on the Billboard 100 since 1990
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 file_path = '/Users/matthewperez/Desktop/Spotify_Capstone/charts.csv'  # Update with your file path
 data = pd.read_csv(file_path)
 
-# Step 1: Convert the 'date' column to datetime format
+# Step 1: Convert  to datetime format
 data['date'] = pd.to_datetime(data['date'], errors='coerce')
 
 # Step 2: Filter for entries from 1990 and onward
