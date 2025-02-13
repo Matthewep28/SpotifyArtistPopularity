@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 file_path = '/Users/matthewperez/Desktop/Spotify_Capstone/charts_with_main_genre.csv'  # Update with your file path
 data = pd.read_csv(file_path)
 
-# Convert the 'date' column to datetime format
+# Convert  to datetime format
 data['date'] = pd.to_datetime(data['date'], errors='coerce')
 
 # Step 1: Filter data for the years 2005 and 2021
@@ -44,7 +44,7 @@ long_format_df['percentage'] = (long_format_df['unique_artists'] / long_format_d
 csv_output_path = '/Users/matthewperez/Desktop/Spotify_Capstone/region_pieChart.csv'
 long_format_df[['year', 'group', 'percentage']].to_csv(csv_output_path, index=False)
 
-# Plot Pie Charts (Optional)
+# Plot Pie Charts 
 # Pie chart for 2005
 plt.figure(figsize=(10, 6))
 plt.subplot(1, 2, 1)
@@ -64,7 +64,7 @@ growth_percentage = ((artists_2021 - artists_2005) / artists_2005) * 100
 print("Percentage Growth/Decline (2005 to 2021):")
 print(growth_percentage)
 
-# Optional: Save growth percentages to CSV
+#  Save growth percentages to CSV
 growth_csv_output_path = '/Users/matthewperez/Desktop/Spotify_Capstone/Billboard_Region_Growth.csv'
 growth_percentage.to_csv(growth_csv_output_path, header=True)
 
